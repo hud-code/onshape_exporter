@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>OnShape Exporter</title>
+  <meta name="description" content="OnShape Exporter">
+  <meta name="author" content="EAC Product Development Solutions">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+  <h1>OnShape Exporter</h1>
+
+  <h2>Add Elements to Export</h2>
+
+  <label for="element_type_list">Choose an Element Type:</label>
+  <select required name="element_type_list" id="element_type_list">
+    <!-- <option value=null>Select</option>
+    <option value="part">Part</option>
+    <option value="part_studio">Part Studio</option>
+    <option value="assembly">Assembly</option>
+    <option value="drawing">Drawing</option> -->
+  </select required>
+
+  <label for="element_list" >Choose an Element</label>
+  <select name="element_list" id="element_list"></select>
+
+  <label for="format_list" >Choose a File Format</label>
+  <select disabled name="format_list" id="format_list"></select disabled>
+
+  <button id="add_to_export" >Add To Export</button>
+
+  <hr style="width:50%;text-align:left;margin-left:0">
+
+  <h2>Export</h2>
+
+  <table id="export_table"></table>
+
+
+  <button id="export_button">Export List</button>
+
+  <script src="js/controller.js"></script>
+</body>
+</html>
